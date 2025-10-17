@@ -1,0 +1,57 @@
+Here's a minimal, single-file `index.html` that uses HTML, CSS, and JavaScript to display the required message.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting from Aryan</title>
+    <style>
+        /* Minimal CSS for basic styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            margin: 0;
+            background-color: #f0f2f5; /* Light background */
+            color: #333; /* Dark text */
+            text-align: center;
+        }
+
+        .container {
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            border: 1px solid #e0e0e0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #007bff; /* A nice blue */
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- The greeting will be inserted here by JavaScript -->
+        <h1 id="greeting-message"></h1>
+    </div>
+
+    <script>
+        // Minimal JavaScript to set the text content
+        document.addEventListener('DOMContentLoaded', () => {
+            const greetingElement = document.getElementById('greeting-message');
+            if (greetingElement) {
+                greetingElement.textContent = "Hello from Aryan's PC";
+            }
+        });
+    </script>
+</body>
+</html>
+```
